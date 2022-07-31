@@ -203,7 +203,7 @@ p {
 .job__logo {
   width: 135px;
   height: 100px;
-  margin: 0px 20px;
+  margin: 5px 20px;
 }
 .job {
   display: flex;
