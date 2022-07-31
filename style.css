@@ -9,11 +9,11 @@
   --color-olive-green: #5d9f40;
   --color-black: #000000;
   /* Font Size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-large: 40px;
+  --font-medium: 22px;
+  --font-regular: 15px;
+  --font-small: 12px;
+  --font-micro: 10px;
   /* Font Weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
@@ -29,7 +29,7 @@
 
 body {
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Audiowide", sans-serif;
   cursor: default;
 }
 
@@ -43,6 +43,17 @@ ul {
   padding-left: 0px;
 }
 
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -53,7 +64,7 @@ h1 {
 
 h2 {
   font-size: var(--font-medium);
-  font-weight: var(--color-white);
+  font-weight: var(--weight-regular);
   color: var(--color-olive-green);
   margin: 8px 0px;
 }
@@ -101,7 +112,7 @@ p {
 
 .Myname {
   font-size: var(--font-medium);
-  font-weight: var(--weight-semi-bold);
+  font-weight: var(--weight-regular);
   color: var(--color-olive-green);
   position: relative;
   top: -22px;
@@ -117,4 +128,39 @@ p {
 
 .navbar__menu__item:hover {
   border: 1px solid var(--color-olive-green);
+}
+
+/* Home */
+#home {
+  background: url('img/Home_Background.png') center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+}
+
+.home__title {
+  font-size: 30px;
+  color: var(--color-olive-green);
+}
+.home__discription {
+  color: var(--color-olive-green);
+}
+
+.home__contact_me {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  
+  border-radius: var(--size-border-radius);
+  color: var(--color-olive-green);
+}
+.home__contact_me:hover {
+  border: 2px solid var(--color-olive-green);
 }
