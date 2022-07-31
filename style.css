@@ -1,7 +1,28 @@
-.logo {
+/* Global */
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-grey: #bfbfbf;
+  --color-grey: #949494;
+  --color-light-pink: #ffdada;
+  --color-light-yellow: #fffec3;
+  --color-olive-green: #5d9f40;
+  --color-black: #000000;
+  /* Font Size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+  /* Font Weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+  /* Size */
 
-    width: 18px;
-  
-    height: 18px;
-  
-  }
+}
+
+/* Universal Tags */
+* {
+  box-sizing: border-box;
+}
