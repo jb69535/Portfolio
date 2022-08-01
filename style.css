@@ -60,7 +60,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  color: var(--color-olive-green);
+  color: var(--color-grey);
 }
 
 /* Typography */
@@ -173,7 +173,7 @@ p {
   color: var(--color-olive-green);
 }
 
-.home__contact_me {
+.home__contact {
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -181,7 +181,7 @@ p {
   border-radius: var(--size-border-radius);
   color: var(--color-light-grey);
 }
-.home__contact_me:hover {
+.home__contact:hover {
   border: 2px solid var(--color-light-grey);
 }
 
