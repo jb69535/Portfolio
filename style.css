@@ -95,6 +95,7 @@ p {
 /* Navbar */
 #navbar {
   position: fixed;
+  margin: 0 0 -20px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -102,11 +103,13 @@ p {
   color: var(--color-olive-green);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-black);
   padding: 8px;
+  height: 65px;
 }
 
 .navbar__menu {
