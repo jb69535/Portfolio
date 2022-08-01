@@ -2,10 +2,12 @@
 :root {
   /* Color */
   --color-white: #ffffff;
+  --color-grey-white: #f7f6ee;
   --color-light-grey: #bfbfbf;
   --color-grey: #949494;
   --color-light-pink: #ffdada;
   --color-light-yellow: #fffec3;
+  --color-light-orange: #fad665;
   --color-olive-green: #5d9f40;
   --color-black: #000000;
   /* Font Size */
@@ -30,6 +32,7 @@
 }
 
 body {
+  background: url('img/Home_Background.png') center/cover no-repeat;
   margin: 0px;
   font-family: "Audiowide", sans-serif;
   cursor: default;
@@ -49,6 +52,9 @@ li {
   list-style: none;
 }
 
+span {
+  color: var(--color-grey);
+}
 button {
   background-color: transparent;
   cursor: pointer;
@@ -74,14 +80,14 @@ h2 {
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-olive-green);
+  color: var(--color-light-grey);
   margin: 8px 0px;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-olive-green);
+  color: var(--color-light-grey);
   margin: 4px 0px;
 }
 
@@ -89,7 +95,6 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-black);
   align-items: center;
   color: var(--color-olive-green);
   padding: 16px;
@@ -127,7 +132,6 @@ p {
 
 /* Home */
 #home {
-  background: url('img/Home_Background.png') center/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
@@ -154,24 +158,25 @@ p {
   margin: 24px;
   padding: 8px 12px;
   border-radius: var(--size-border-radius);
-  color: var(--color-olive-green);
+  color: var(--color-light-grey);
 }
 .home__contact_me:hover {
-  border: 2px solid var(--color-olive-green);
+  border: 2px solid var(--color-light-grey);
 }
 
 /* Section common */
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
 
 /* About */
-#about {
-  background: url('img/Home_Background.png') center/cover no-repeat;
-}
 
 .about__majors {
   display: flex;
@@ -197,7 +202,7 @@ p {
 
 .major__icon:hover i {
   color: var(--color-light-pink);
-  transform: rotate(-15deg) scale(1.1);
+  transform: rotate(-15deg) scale(1.2);
 }
 
 .job__logo {
@@ -217,7 +222,7 @@ p {
 
 .job__name,
 .job__period {
-  color: var(--color-olive-green);
+  color: var(--color-light-grey);
 }
 
 .job__name {
@@ -228,5 +233,44 @@ p {
   font-size: var(--font-micro)
 }
 
+/* Skills */
+.skillset {
+  display: flex;
+  margin: 20px 0px;
+}
 
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-grey-white);
+}
 
+.skill {
+  margin-bottom: 8px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  margin: 0px 33px 0px 33px;
+  background-color: var(--color-light-grey);
+}
+
+.skill__value {
+  height: 3px;
+  background-color: var(--color-light-orange);
+}
+
+.skillset__right {
+  flex-basis: 60%;
+  background-color: var(--color-grey-white);
+}
+
+.tools, .etc {
+  padding: 30px;
+}
