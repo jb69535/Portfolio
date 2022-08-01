@@ -131,6 +131,14 @@ p {
   border: 1px solid var(--color-olive-green);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  display: none;
+}
+
 /* Home */
 #home {
   padding: 40px;
@@ -411,4 +419,39 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-olive-green);
+}
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
