@@ -186,25 +186,27 @@
             <h1>My Work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
-                <button class="category__btn">
+                <button class="category__btn active" data-filter="*">
                     All<span class="category__count">5</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="front-end">
                     Front-end<span class="category__count">3</span>
                 </button>
-                <button class="category__btn">
+                <button class="category__btn" data-filter="back-end">
                     Back-end<span class="category__count">2</span>
                 </button>
             </div>
             <div class="work__projects">
-                <a href="https://github.com/jb69535/Portfolio" class="project" target="blank">
+                <a href="https://github.com/jb69535/Portfolio" class="project" target="blank" 
+                data-type="front-end">
                     <img class="project__img" src="img/projects/Portfolio.png" alt="Portfolio">
                     <div class="project__description">
                         <h3>Portfolio</h3>
                         <span>Coding with HTML, CSS, and JavaScript</span>
                     </div>
                 </a>
-                <a href="https://github.com/jb69535/Gallery" class="project" target="blank">
+                <a href="https://github.com/jb69535/Gallery" class="project" target="blank"
+                data-type="front-end">
                     <img class="project__img" src="img/projects/Gallery.png" alt="Gallery App">
                     <div class="project__description">
                         <h3>Gallery App</h3>
