@@ -522,6 +522,7 @@ p {
   .skillset__right {
     flex-basis: 60%;
     background-color: var(--color-grey-white);
+    margin-right: 20px;
   }
   
   .tools, .etc {
