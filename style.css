@@ -446,6 +446,7 @@ p {
 /* For below 768px screen width */
 @media screen and (max-width: 767px) {
   .navbar__toggle-btn {
+    display: flex;
     display: block;
   }
 
@@ -484,5 +485,46 @@ p {
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+
+  .skillset {
+    display: flex;
+    margin: 20px 0px;
+  }
+  
+  .skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-grey-white);
+  }
+  
+  .skill {
+    margin-bottom: 8px;
+  }
+  
+  .skill__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  
+  .skill__bar {
+    width: 100%;
+    height: 3px;
+    margin: 0px 33px 0px 33px;
+    background-color: var(--color-light-grey);
+  }
+  
+  .skill__value {
+    height: 3px;
+    background-color: var(--color-light-orange);
+  }
+  
+  .skillset__right {
+    flex-basis: 60%;
+    background-color: var(--color-grey-white);
+  }
+  
+  .tools, .etc {
+    padding: 30px;
   }
 }
