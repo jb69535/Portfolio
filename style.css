@@ -444,7 +444,7 @@ p {
   color: var(--color-olive-green);
 }
 /* For below 768px screen width */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar__toggle-btn {
     display: block;
   }
