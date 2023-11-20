@@ -31,7 +31,6 @@
             <li class="navbar__menu__item" data-link="#about">About</li>
             <li class="navbar__menu__item" data-link="#skills">Skills</li>
             <li class="navbar__menu__item" data-link="#work">My Work</li>
-            <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
             <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
         <!-- Toggle Button -->
@@ -62,7 +61,7 @@
                 </div>
                 <h2 class="major__title">Front-end</h2>
                 <h3 class="major__description">
-                    HTML, CSS, JavaScript
+                    HTML, CSS, JavaScript, React
                 </h3>
             </div>
 
@@ -70,9 +69,9 @@
                 <div class="major__icon">
                     <i class="fa-solid fa-mobile-button"></i>
                 </div>
-                <h2 class="major__title">Mobile</h2>
+                <h2 class="major__title">Game Dev</h2>
                 <h3 class="major__description">
-                    Java
+                    Unity, C#
                 </h3>
             </div>
             <div class="major">
@@ -81,7 +80,7 @@
                 </div>
                 <h2 class="major__title">Back-end</h2>
                 <h3 class="major__description">
-                    Java, C, C++, Python
+                    Java, C, C++
                 </h3>
             </div>
         </div>
@@ -89,8 +88,8 @@
             <div class="job">
                 <img src="img/jobs/UniversityofGeorgia.png" alt="University of Georgia" class="job__logo" />
                 <div class="job__description">
-                    <p class="job__name">Currently studying at University of Georgia.</p>
-                    <p class="job__period">2021 Aug - Until now</p>
+                    <p class="job__name">University of Georgia.</p>
+                    <p class="job__period">2021 Fall - 2024 Spring</p>
                 </div>
             </div>
             <div class="job">
@@ -125,7 +124,7 @@
                     <h2 class="skillset__title">Skills</h2>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>HTML</span>
+                            <span>React</span>
                             <span>80%</span>
                         </div>
                         <div class="skill__bar">
@@ -161,7 +160,16 @@
                     </div>
                     <div class="skill">
                         <div class="skill__description">
-                            <span>C, C++</span>
+                            <span>C#</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>C++</span>
                             <span>85%</span>
                         </div>
                         <div class="skill__bar">
@@ -175,6 +183,7 @@
                         <ul class="tools__lists">
                             <li><span>Visual Studio</span></li>
                             <li><span>Odin</span></li>
+                            <li><span>Unity</span></li>
                         </ul>
                     </div>
                     <div class="etc">
@@ -195,76 +204,34 @@
             <h3>Projects</h3>
             <div class="work__categories">
                 <button class="category__btn active" data-filter="*">
-                    All<span class="category__count">5</span>
-                </button>
-                <button class="category__btn" data-filter="front-end">
-                    Front-end<span class="category__count">3</span>
-                </button>
-                <button class="category__btn" data-filter="back-end">
-                    Back-end<span class="category__count">2</span>
+                    All<span class="category__count">3</span>
                 </button>
             </div>
             <div class="work__projects">
                 <a href="https://github.com/jb69535/Portfolio" class="project" target="blank" 
-                data-type="front-end">
+                data-type="*">
                     <img class="project__img" src="img/projects/Portfolio.png" alt="Portfolio">
                     <div class="project__description">
                         <h3>Portfolio</h3>
-                        <span>Coding with HTML, CSS, and JavaScript</span>
+                        <span>Basic Portfolio website made with HTML, CSS, and JavaScript.</span>
                     </div>
                 </a>
                 <a href="https://github.com/jb69535/Gallery" class="project" target="blank"
-                data-type="front-end">
+                data-type="*">
                     <img class="project__img" src="img/projects/Gallery.png" alt="Gallery App">
                     <div class="project__description">
                         <h3>Gallery App</h3>
-                        <span>Coding with Java</span>
+                        <span>Implemented a GUI application in Java that displays a gallery of images based on the results of a search query to the iTunes Search API.</span>
                     </div>
                 </a>
-                <a href="https://github.com/jb69535/DoriTori" class="project" target="blank"
-                data-type="front-end">
-                    <img class="project__img" src="img/projects/DoriTori.png" alt="DoriTori">
+                <a href="https://github.com/jb69535/AfterSchool" class="project" target="blank"
+                data-type="*">
+                    <img class="project__img" src="img/projects/AfterSchool.png" alt="AfterSchool">
                     <div class="project__description">
-                        <h3>DoriTori</h3>
-                        <span>Website for selling and buying things online</span>
+                        <h3>AfterSchool</h3>
+                        <span>Unity VR Project. Made a Horror escape room in which the player has to solve tasks to win the game. Work as a C# script developer.</span>
                     </div>
                 </a>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-        <div class="section__container">
-            <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <img src="img/testimonial/person1.jpg" alt="Person1" class="testimonial__avatar" />
-                    <div class="testimonial__speech-bubble">
-                        <p>Jun is a skillful person. By using HTML, CSS, and JavaScript, he can make different kinds
-                            of websites. We had worked together on a project building a website that sells
-                            products.
-                        </p>
-                        <p class="name">
-                            <a href="https://github.com/whwan4570">
-                                <br> Wonjoon / UGA '24
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial__speech-bubble">
-                        <p>Jun is a skillful person. By using HTML, CSS, and JavaScript, he can make different kinds
-                            of websites. We had worked together on a project building a website that sells
-                            products.</p>
-                        <p class="name">
-                            <a href="https://github.com/whwan4570">
-                                <br> Wonjoon / UGA '24
-                            </a>
-                        </p>
-                    </div>
-                    <img src="img/testimonial/person1.jpg" alt="Person1" class="testimonial__avatar" />
-                </div>
             </div>
         </div>
     </section>

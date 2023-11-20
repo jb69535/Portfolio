@@ -201,8 +201,17 @@ p {
 
 .about__majors {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically if needed */
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
   margin: 80px 0px;
+}
+
+.major {
+  /* Add margins for spacing between items if needed */
+  width: 250px;
+  height: 250px;
+  margin: 10px;
 }
 
 .major__icon {
@@ -232,8 +241,8 @@ p {
   margin: 5px 20px;
 }
 .job {
-  display: flex;
-  align-items: center;
+  /* Add margins for spacing between job items */
+  margin: 10px;
 }
 
 .job__discription {
@@ -252,6 +261,14 @@ p {
 
 .job__period {
   font-size: var(--font-micro)
+}
+
+.about__jobs {
+  text-align: center; /* Centers text inside the job descriptions */
+  margin: 0 auto; /* Centers the about__jobs div */
+  display: flex;
+  justify-content: center; /* Centers the job divs horizontally */
+  flex-wrap: wrap; /* Allows job divs to wrap on smaller screens */
 }
 
 /* Skills */
