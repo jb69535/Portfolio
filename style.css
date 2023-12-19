@@ -460,21 +460,20 @@ p {
   transform: scale(1.1);
   color: var(--color-olive-green);
 }
-/* For below 768px screen width */
+
 @media screen and (max-width: 767px) {
+  /* Adjust navbar for mobile view */
   .navbar__toggle-btn {
-    display: flex;
     display: block;
   }
 
   #navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: var(--color-black);
-  }
-  #navbar.navbar--dark {
     padding: 16px;
   }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -484,65 +483,76 @@ p {
 
   .navbar__menu.open {
     display: block;
-    background-color: var(--color-black);
   }
 
+  /* Adjust major sections in About for mobile view */
   .about__majors {
     flex-direction: column;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 20px;
+    width: auto;
   }
 
-  .project {
-    flex-grow: 1;
-  }
-
-  .testimonial__avatar {
-    width: 80px;
-    height: 80px;
-  }
-
+  /* Skillset section adjustments */
   .skillset {
-    display: flex;
-    margin: 20px 0px;
+    padding: 0; /* Remove any padding that might cause layout issues */
   }
-  
-  .skillset__left {
-    flex-basis: 60%;
-    background-color: var(--color-grey-white);
+
+  .skillset__left, .skillset__right {
+    padding: 0 10px; /* Add some padding to prevent content from touching the screen edges */
   }
-  
+
   .skill {
-    margin-bottom: 8px;
+    margin-bottom: 20px; /* Add more space between skill bars */
   }
-  
+
   .skill__description {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    align-items: center;
+    width: 100%; /* Ensures the description takes up the full width */
   }
-  
+
   .skill__bar {
-    width: 100%;
-    height: 3px;
-    margin: 0px 33px 0px 33px;
     background-color: var(--color-light-grey);
+    height: 20px; /* Set a fixed height for the skill bars */
+    width: calc(100% - 50px); /* Subtract width to make room for the percentage */
+    margin-right: 10px; /* Ensure there's space between the bar and the percentage */
+    position: relative; /* Needed for absolute positioning of child elements */
   }
-  
+
   .skill__value {
-    height: 3px;
     background-color: var(--color-light-orange);
+    width: auto; /* Allow the width to be defined inline based on skill level */
+    max-width: 100%; /* Ensure it doesn't extend beyond the bar */
+    height: 100%; /* Match the height of the parent */
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: var(--size-border-radius);
+    display: flex;
+    align-items: center; /* Center the percentage text vertically */
+    justify-content: center; /* Center the percentage text horizontally */
   }
-  
-  .skillset__right {
-    flex-basis: 60%;
-    background-color: var(--color-grey-white);
-    margin-right: 30px;
+
+  .skill__value span {
+    position: absolute;
+    right: -40px; /* Position the percentage text to the right of the bar */
+    top: 0;
+    color: var(--color-white); /* Choose a color that contrasts with the skill bar */
   }
-  
-  .tools, .etc {
-    padding: 30px;
+
+  /* Adjust project layout for mobile view */
+  .project {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Testimonial avatar size adjustment */
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
   }
 }
