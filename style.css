@@ -235,6 +235,14 @@ p {
   transform: rotate(-15deg) scale(1.2);
 }
 
+.about__jobs {
+  text-align: center; /* Centers text inside the job descriptions */
+  margin: 0 auto; /* Centers the about__jobs div */
+  display: flex;
+  justify-content: center; /* Centers the job divs horizontally */
+  flex-wrap: wrap; /* Allows job divs to wrap on smaller screens */
+}
+
 .job__logo {
   width: 135px;
   height: 100px;
@@ -242,11 +250,13 @@ p {
 }
 .job {
   /* Add margins for spacing between job items */
-  margin: 10px;
+  width: 135px;
+  height: 100px;
+  margin: 5px 20px;
 }
 
 .job__discription {
-  margin: 0px 16px;
+  margin: 5px 20px;
   text-align: left;
 }
 
@@ -261,14 +271,6 @@ p {
 
 .job__period {
   font-size: var(--font-micro)
-}
-
-.about__jobs {
-  text-align: center; /* Centers text inside the job descriptions */
-  margin: 0 auto; /* Centers the about__jobs div */
-  display: flex;
-  justify-content: center; /* Centers the job divs horizontally */
-  flex-wrap: wrap; /* Allows job divs to wrap on smaller screens */
 }
 
 /* Skills */
