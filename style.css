@@ -241,6 +241,7 @@ p {
   display: flex;
   justify-content: center; /* Centers the job divs horizontally */
   flex-wrap: wrap; /* Allows job divs to wrap on smaller screens */
+  gap: 30px;
 }
 
 .job__logo {
@@ -250,6 +251,7 @@ p {
 }
 .job {
   /* Add margins for spacing between job items */
+  text-align: center;
   width: 135px;
   height: 100px;
   margin: 5px 20px;
@@ -353,10 +355,11 @@ p {
 }
 
 .work__projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  opacity: 1;
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    grid-gap: 20px; /* Adjust spacing */
+    justify-content: center;
+    align-items: center;
 }
 
 .work__projects.anim-out {
@@ -367,8 +370,8 @@ p {
 
 .project {
   position: relative;
-  width: 280px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   margin: 2px;
   justify-content: center;
   align-items: center;
@@ -402,6 +405,14 @@ p {
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
+  z-index: 10;
+}
+
+.project__description span {
+  max-height: 90%; /* ✅ 너무 긴 텍스트 제한 */
+  overflow-y: auto; /* ✅ 넘치는 부분만 스크롤 */
+  display: block;
+  text-overflow: ellipsis;
 }
 
 .project__description h3:after {
@@ -551,10 +562,29 @@ p {
     width: 100%;
     margin: 10px 0;
   }
+  .project__description {
+    font-size: 12px; /* 모바일에서 가독성 높이기 */
+    padding: 5px;
+}
+.project:hover .project__description {
+  z-index: 10;
+}
 
   /* Testimonial avatar size adjustment */
   .testimonial__avatar {
     width: 80px;
     height: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project__description {
+      font-size: 10px; /* 더 작은 화면에서는 글자 크기 줄이기 */
+      padding: 3px;
+  }
+  .project:hover .project__description {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
   }
 }
